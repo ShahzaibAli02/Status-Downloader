@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cd.statussaver">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".activity.MainActivity2"
+            android:label="@string/title_activity_main2"></activity>
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.AboutUsActivity" />
+        <activity android:name=".activity.FacebookActivity" />
+        <activity android:name=".activity.TikTokActivity" />
+        <activity android:name=".activity.WhatsappActivity" />
+        <activity android:name=".activity.InstagramActivity" />
+        <activity android:name=".activity.FullViewActivity" />
+        <activity android:name=".activity.LikeeActivity" />
+        <activity android:name=".activity.JoshActivity" />
+        <activity android:name=".activity.MitronActivity" />
+        <activity android:name=".activity.ChingariActivity" />
+        <activity android:name=".activity.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.GalleryActivity" />
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.WebviewAcitivity" />
+        <activity android:name=".activity.TwitterActivity" />
+        <activity android:name=".activity.RoposoActivity" />
+        <activity android:name=".activity.ShareChatActivity" />
+        <activity android:name=".activity.SnackVideoActivity" />
+        <activity android:name=".activity.MXTakaTakActivity" />
+        <activity android:name=".activity.MojActivity" />
+        <activity android:name=".activity.FBLoginActivity" />
+        <activity android:name=".activity.VideoPlayerActivity" />
+        <activity android:name=".fackChat.MainFackChat" />
+        <activity android:name=".fackChat.Calls" />
+        <activity android:name=".fackChat.Wallpaper" />
+        <activity android:name=".fackChat.UserChat" />
+        <activity android:name=".fackChat.GroupProfile" />
+        <activity android:name=".fackChat.EditMessageActivity" />
+        <activity android:name=".fackChat.EditChatUserProfile" />
+        <activity android:name=".fackChat.ChatProfile" />
+        <activity android:name=".asciiFaces.AsciiFacesMainActivity" />
+        <activity android:name=".captionStatusShare.Captionitem" />
+        <activity android:name=".captionStatusShare.Captionstatus" />
+        <activity android:name=".directChat.ChatDirect" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <meta-data
+            android:name="com.startapp.sdk.APPLICATION_ID.RETURN_ADS_DISENABLED"
+            android:value="@string/START_APP_ID" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher_round" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimaryDark" />
+    </application>
+
+</manifest>

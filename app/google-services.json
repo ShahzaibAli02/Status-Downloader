@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "752026261302",
+    "project_id": "notification-social",
+    "storage_bucket": "notification-social.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752026261302:android:3481d4b6c959a398280597",
+        "android_client_info": {
+          "package_name": "EasyVideodownloader.socialmediaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752026261302-tgcnpi658jmhius6cm6g2q8mo82o1v70.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWNcA3Z3NB48MygOaYFou6Pg23kKisIjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752026261302-tgcnpi658jmhius6cm6g2q8mo82o1v70.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
